@@ -1,0 +1,42 @@
+.payments-container {
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+}
+
+.payments-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.payments-table th,
+.payments-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #333;
+}
+
+.payments-table th {
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.payments-table tr:nth-child(even) {
+  background-color: #2c2c2c;
+}
+
+.payments-table tr:hover {
+  background-color: #444;
+}
+
+.payments-table td {
+  color: #ddd;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+}
