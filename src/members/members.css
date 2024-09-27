@@ -1,0 +1,550 @@
+
+/*header-section*/
+.header-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e1e1e; /* Dark background color */
+    color: #ffffff; /* Default text color */
+   
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    margin-bottom: 70px;
+}
+
+.textwrapper {
+    flex: 1;
+    padding: 1rem;
+    text-align: left;
+    border: none;
+    
+}
+
+.imagewrapper {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    border: none;
+}
+
+.imagewrapper img {
+    max-width: 100%;
+    height: 400px;
+    border-radius: 30px;
+    width: 500px;
+}
+
+.title {
+    font-size: 4rem;
+    color: rgb(218, 7, 105);
+    margin-bottom: 1rem;
+    font-family: sans-serif;
+}
+
+.description {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: #21f35298; 
+    margin-bottom: 1.5rem;
+    font-family: sans-serif;
+}
+
+.button-group {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 1.1rem 1.5rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+    border-radius: 30px;
+    width: 200px;
+    text-align: center; 
+}
+
+.explore-btn {
+    background-color: #ffb6c1; /* Light pink background color */
+    color: rgb(218, 7, 105); /* Dark text color */
+    border: none;
+}
+
+.performance-btn {
+    background-color: transparent;
+    color: #00ff00; /* Light green text color */
+    border: 2px solid #00ff00; /* Light green border */
+}
+
+.explore-btn:hover{
+    opacity: 0.8;
+    background-color: #fff;
+}
+.performance-btn:hover {
+    opacity: 0.8;
+    color: #06a106;
+}
+/* Media Queries for Tablet */
+@media (max-width: 1024px) {
+    .header-section{
+        width: auto;
+        overflow-x: hidden;
+    }
+    .title {
+        font-size: 3rem; /* Smaller font size for tablets */
+    }
+
+    .description {
+        font-size: 1rem; /* Smaller font size */
+    }
+
+    .btn {
+        width: 150px; /* Smaller button width */
+        font-size: 1rem; /* Smaller font size */
+    }
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 640px) {
+    .header-section {
+        height: auto; 
+        width: auto;
+        overflow-x: hidden;
+    }
+
+    .row {
+        flex-direction: column; /* Stack elements vertically */
+        height: auto; /* Auto height for better flexibility */
+        width: auto;
+    }
+
+    .textwrapper, .imagewrapper {
+        flex: none; 
+        width: auto; 
+    }
+    .imagewrapper img{
+        width: 100%;
+        height: auto;
+    }
+
+    .title {
+        font-size: 2.5rem; /* Even smaller font size for mobiles */
+    }
+
+    .description {
+        font-size: 0.9rem; /* Even smaller font size */
+    }
+
+    .btn {
+        width: auto; /* Full width for better accessibility */
+        font-size: 1rem; /* Adapt font size */
+    }
+}
+
+
+
+/*privately fund*/
+.fund {
+    background-color: white;
+    width: 100%;
+}
+.art-container {
+    width: 95%;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 15px;
+    margin-left: 15px;
+    gap:30px;
+}
+
+.art-col2 {
+    flex: 1;
+    max-width: 100%;
+    height: 70vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    Margin-right: 30px;
+}
+
+.art-col {
+    Margin-left: 30px;
+    flex: 1;
+    max-width: 100%;
+    margin-right: 10px;
+    height: 70vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.section-title {
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.section-subtitle {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-family: sans-serif;
+    color:rgb(218, 7, 105);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.art-text{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.808);
+}
+/* Media Queries for Tablet */
+@media (max-width: 1024px) {
+    .fund{
+        width: auto;
+        overflow-x: hidden;
+    }
+    .art-container {
+        height: auto; /* Adjust height for better fitting on tablets */
+        gap: 20px; /* Reduced gap for better spacing on tablets */
+    }
+
+    .art-col2, .art-col {
+        height: auto; /* Adjust height for better fitting on tablets */
+        margin-right: 15px; /* Adjust margins for better spacing */
+        margin-left: 15px;
+    }
+
+    .section-title {
+        font-size: 3rem; /* Smaller font size for tablets */
+    }
+
+    .section-subtitle {
+        font-size: 1.5rem; /* Smaller font size for tablets */
+    }
+
+    .art-text {
+        font-size: 1.2rem; /* Smaller font size for tablets */
+    }
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 640px) {
+    .fund{
+        width: auto;
+        overflow-x: hidden;
+    }
+    .art-container {
+        flex-direction: column; /* Stack items vertically on mobile */
+        height: auto; /* Auto height for better flexibility */
+        width: auto;
+        gap: 10px; /* Reduced gap for mobile screens */
+        padding: 10px; /* Reduced padding for mobile screens */
+    }
+
+    .art-col2, .art-col {
+        margin-right: 0; /* Remove right margin */
+        margin-left: 0; /* Remove left margin */
+        margin-top: 10px; /* Adjust margin for better spacing */
+        margin-bottom: 10px;
+    }
+
+    .section-title {
+        font-size: 2.5rem; /* Smaller font size for mobile */
+    }
+
+    .section-subtitle {
+        font-size: 1.25rem; /* Smaller font size for mobile */
+        margin-bottom: 30px; /* Adjust bottom margin for mobile */
+    }
+
+    .art-text {
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+}
+
+
+
+
+
+/*carousel*/
+.events-portfolio{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: auto;
+}
+.portfolio-container{
+    position: relative;
+    text-align: center;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.portfolio-text{
+    flex: 1;
+    margin-bottom: 50px;
+    font-family: sans-serif;
+}
+.portfolio-text h4 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-family: sans-serif;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 150px;
+    font-weight: bold;
+}
+.portfolio-text h5 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-family: sans-serif;
+    color: rgb(82, 82, 82);
+    margin-top: 70px;
+    text-align: left;
+}
+.slider-container2 {
+    flex: 1.5;
+    position: relative;
+    width: 100%;
+    height: auto; /* Set the height of the slider */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.slide2 {
+    flex: 2;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0;
+    transform: translateX(100%);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 60% auto;
+    flex-direction: column;
+}
+.slide2.active {
+    display: flex; /* Only display the active slide */
+    opacity: 1;
+    transform: translateX(0);
+}
+.transitioning .slide2 {
+    opacity: 5; /* Adjust based on desired effect */
+}
+.slide-image{
+    flex: 2;
+    width: 70%;
+    height: 70%; /* Image takes 70% of the slide height */
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    border-radius: 20px 20px 0 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.slide-content {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 70%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    margin-bottom: 20px;
+    border-radius: 0 0 20px 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #8bf8a4fd;
+}
+
+.slide-content button {
+    background-color: #8bf8a4fd; /* Example color */
+    padding: 20px 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border-radius: 40px;
+    width: 200px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    margin-left: 110px;
+}
+.slide-content button:hover {
+    background-color:#b4f8c4fd;; /* Example color */
+}
+
+.control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(182, 180, 180);
+    color: black;
+    border: none;
+    padding: 15px 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 1000px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+@media (max-width: 1024px) {
+    .events-portfolio{
+        width: auto;
+        overflow-x: hidden;
+    }
+    .portfolio-container {
+        display: flex;
+        flex-direction: row; 
+        width: auto;
+        justify-content: center;
+    }
+   
+
+    .portfolio-text h4 {
+        font-size: 2.5rem; /* Adjust font size for tablets */
+        margin-top: 100px; /* Adjust top margin for better fit */
+    }
+    .portfolio-text h5 {
+        font-size: 1.25rem; /* Adjust font size for tablets */
+        margin-top: 50px; /* Adjust top margin for better fit */
+    }
+
+    .slider-container2 {
+        width: 100%;
+        height: auto; 
+        display: flex;
+        justify-content: center;
+        border-radius: 20px;
+    }
+
+    .slide-content {
+        width: 100%; /* Increase width to utilize space */
+        margin: 0 auto; /* Center the slide content */
+        margin: auto;
+        display: flex; 
+        flex-direction: column;  
+        align-items: center;  
+        justify-content: center;
+    }
+    .slide-image{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .slide-content button {
+        margin-left: 0; /* Center button on tablets */
+        font-size: 1.1rem; /* Adjust font size for buttons */
+        width: auto;
+        padding: 10px 20px;
+       border: none;
+    }
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 640px) {
+    .events-portfolio{
+        width: auto;
+        height: auto;
+        overflow-x: hidden;
+        
+    }
+    .portfolio-text h4 {
+        font-size: 2rem; 
+        margin-top: 50px; 
+        text-align: center;
+    }
+
+    .portfolio-text h5 {
+        font-size: 1.4rem; 
+        margin-top: 30px; 
+        text-align: center;
+    }
+    .portfolio-container {
+        display: flex;
+        flex-direction: row; 
+        width: auto;
+        justify-content: center;
+    }
+    .slider-container2 {
+        width: 100%;
+        height: auto; 
+        display: flex;
+        justify-content: center;
+        border-radius: 20px;
+    }
+
+    .slide-content {
+        width: 100%; /* Increase width to utilize space */
+        margin: 0 auto; /* Center the slide content */
+        margin: auto;
+        display: flex; 
+        flex-direction: column;  
+        align-items: center;  
+        justify-content: center;
+    }
+    .slide-image{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .slide-content button {
+        font-size: 1rem; 
+        width: auto;
+        padding: 10px 20px;
+       border: none;
+    }
+    .control{
+        background-color: transparent;
+        color: rgb(182, 180, 180);
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,180 @@
+/* General Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 25px;
+  background-color: #9df9aa;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1000;
+  border-radius: 30px;
+  position: relative;
+}
+
+/* Sticky navbar styles */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 10px 20px; /* Space around the navbar when sticky */
+  border-radius: 8px; /* Optional rounded corners for sticky navbar */
+  background-color: #9df9aa;
+  z-index: 1000;
+  border-radius: 30px;
+}
+
+/* Link styles */
+.logo img {
+  height: 60px; /* Adjust logo size */
+  height: 4rem;
+  padding-bottom: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Space between links */
+}
+.nav-links-menu {
+  display: none; 
+  position: absolute; 
+  top: 100%; 
+  left: 0;
+  right: 0;
+  background-color: #9df9aa; 
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 10px;
+  z-index: 999;
+  border-radius: 30px; 
+  text-align: center;
+}
+.nav-links a, .nav-links-menu a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  padding-bottom: 5px;
+  transition: background-color 0.3s;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-family: sans-serif;
+}
+
+.nav-links a:hover, .nav-links-menu a:hover {
+  color: #3366ff;
+  cursor: pointer;
+}
+
+/* Search box styles */
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 5px;
+  background-color: #fff;
+  margin-right: 20px;
+}
+.search-box input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 1rem;
+  flex-grow: 1;
+}
+
+.search-box img {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.search-box input::placeholder {
+  color: #999;
+}
+
+/* Menu icon for mobile */
+.menu-icon {
+  background: none;
+  border: none;
+  display: none; /* Hidden by default, shown in mobile view */
+  font-size: 24px;
+}
+.login-btn {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  padding: 5px 5px;
+  border: solid 1px black;
+}
+
+.login-btn:hover {
+  color: #3366ff;
+  
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) { /* Tablet */
+  .navbar {
+      display: flex;
+      flex-direction: row;
+      padding: 10px;
+      justify-content: space-between;
+      padding: 10px;
+  }
+  .search-box {
+    display: none;
+  }
+
+  .nav-links, .nav-links-menu {
+      display: none;
+  }
+
+  .menu-icon {
+      display: block;
+  }
+  .nav-links, .nav-links-menu {
+    display: none; /* Hide links by default, shown when menu is open */
+}
+
+.nav-links-menu {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    z-index: 999;
+    
+}
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+} 
+  .menu-icon {
+      display: block; /* Show menu icon */
+  }
+
+  .nav-links, .nav-links-menu {
+      display: none; /* Hide links by default, shown when menu is open */
+  }
+
+  .nav-links-menu {
+      display: flex; /* Show when menu is open */
+      flex-direction: column;
+      align-items: center; /* Align links to the start */
+        padding-top: 10px; 
+        z-index: 999;    
+  }
+  .nav-links-menu.open{
+    position: fixed;
+  }
+}

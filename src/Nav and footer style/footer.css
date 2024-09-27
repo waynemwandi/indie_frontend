@@ -1,0 +1,167 @@
+.footer {
+    background-color: rgba(0, 0, 0, 0.87);
+    padding: 20px 0;
+}
+
+.footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    flex: 1 1 21%;
+    margin: 10px;
+}
+
+.section-head {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: rgb(209, 7, 101);
+}
+
+.section-text {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.section-link {
+    margin-bottom: 5px;
+}
+
+.section-link a {
+    color: #21f35298;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1rem;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.section-link a:hover {
+    text-decoration: underline;
+    color: #71f18fb2;
+}
+
+.section-contact {
+    margin: 0;
+    font-size: 1rem;
+    color: #a4a6a8;
+}
+
+.section-socials {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    color:rgb(209, 7, 101);
+}
+.section-socials-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.social-row {
+    display: flex;
+    gap: 10px;
+}
+
+.soc-item a {
+    color: #343a40;
+    font-size: 1.5rem;
+}
+.soc-item {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    width: 40px; /* Width of social icons */
+    height: 40px; /* Height of social icons */
+    object-fit: cover; /* Ensure icons are not distorted */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth hover effects */
+    background-color: rgba(128, 128, 128, 0.822);
+    border-radius: 10px;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+    opacity: 0.8; /* Slightly reduce opacity on hover */
+}
+
+.section-copy {
+    flex-basis: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy-text {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #a4a6a8;
+}
+.design-credit {
+    text-align: right;
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: #a4a6a8;
+}
+.design-credit a {
+    color: #0a84ff88; /* Bright color for the link for good visibility */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.design-credit a:hover {
+    text-decoration: underline; /* Underline on hover for better user interaction */
+}
+
+/* Media Queries for Tablet */
+@media (max-width: 1024px) {
+    .footer-section {
+        justify-content: center;
+    }
+
+    .section {
+        flex: 1 1 45%; /* Two columns on tablets */
+        margin: 10px;
+    }
+
+    .section-head {
+        font-size: 1.15rem; /* Slightly smaller font size */
+    }
+
+    .section-link a, .section-contact, .copy-text, .design-credit {
+        font-size: 0.9rem; /* Adjust font size for better readability */
+    }
+
+    .soc-item a {
+        font-size: 1.3rem; /* Adjust social icon font size */
+    }
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 640px) {
+    .footer-section {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center; /* Center align for better aesthetics */
+    }
+
+    .section {
+        flex: 1 1 100%; /* Full width for each section */
+        margin: 5px 0; /* Reduce margin for better fit */
+        text-align: center; /* Center align text for better readability */
+    }
+
+    .section-head {
+        font-size: 1rem; /* Smaller font size */
+    }
+
+    .section-link a, .section-contact, .copy-text, .design-credit {
+        font-size: 0.8rem; /* Smaller font size for mobile */
+    }
+
+    .social-icon {
+        width: 30px; /* Reduce size of social icons */
+        height: 30px;
+    }
+}
